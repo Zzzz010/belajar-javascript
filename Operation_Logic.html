@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <title>Operation Logic</title>
+    </head>
+    <body>
+        <script>
+            const NilaiUjian = 80
+            const NilaiAbsen = 70
+
+            const LulusUjian = NilaiUjian > 75
+            const LulusAbsen = NilaiAbsen > 75
+
+            const Lulus1 = LulusUjian && LulusAbsen
+            document.writeln("<p>" + Lulus1 + "</p>")
+
+            const Lulus2 = LulusUjian || LulusAbsen
+            document.writeln("<p>" + Lulus2 + "</p>")
+
+            const Lulus3 = LulusUjian && !LulusAbsen
+            document.writeln("<p>" + Lulus3 + "</p>")
+        </script>
+    </body>
+</html>
