@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <title>Convert String to Number</title>
+    </head>
+    <body>
+        <script>
+            const nilai1 = Number("1")
+            const nilai2 = 3.5
+            let sum = nilai1 + nilai2
+
+            document.writeln(`<p>${sum}</p>`)
+            document.writeln(`<p>${parseInt("3")}</p>`) // 3
+            document.writeln(`<p>${parseFloat("1.23")}</p>`) // 1.23
+            document.writeln(`<p>${Number("3.14")}</p>`) // 3.14
+
+            const nilai3 = 3
+            const nilai4 = 4
+            sum = nilai3.toString() + nilai4.toString()
+            document.writeln(`<p>${sum}</p>`)
+
+            // Masih Tolerir kesalahan data
+            document.writeln(`<p>${parseInt("bukan")}</p>`) // NaN
+            document.writeln(`<p>${parseFloat("3.1yes")}</p>`) / 3.1
+            
+            // Number() tidak menolerir kesalahan data
+            document.writeln(`<p>${Number("5.1ya")}</p>`) / NaN
+            document.writeln(`<p>${Number("bukan number")}</p>`) / NaN
+            
+            let nilaia = 7
+            let nilaib = Number("Salah")
+
+            sum = nilaia + nilaib
+            document.writeln(`<p>${isNaN(sum)}</p>`)
+        </script>
+    </body>
+</html>

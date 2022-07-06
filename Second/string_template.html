@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <title>String Template</title>
+    </head>
+    <body>
+        <script>
+            const name = "Raditya Bagus Putra"
+            const firstName = "Raditya"
+            const middleName = "Bagus"
+            const lastName = "Putra"
+            const template = `Nama = ${firstName} ${middleName} ${lastName}`
+
+            console.info(template)
+
+            const nilai = 85
+            const template2 = `Nama = ${name}, Lulus = ${nilai > 75}`
+
+            console.info(template2)
+
+            let MultiLineString = `
+            Nama saya adalah Raul
+            Asal dari Jawa Timur
+            Mahasiswa ....
+            Cuma Test`
+
+            document.writeln("<pre>")
+                document.writeln(MultiLineString)
+                document.writeln("</pre>")
+        </script>
+    </body>
+</html>

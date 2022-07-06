@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <title>Undefined</title>
+    </head>
+    <body>
+        <script>
+            let zero
+            if (zero === undefined) {
+                console.info("Undefined 0")
+            } else {
+                console.info("Defined 0")
+            }
+
+            const name = ["Raung", "Kawijayan"]
+
+            if (name[2] === undefined) {
+                console.info("Undefined")
+            } else {
+                console.info(`Hello ${name[2]}`)
+            }
+
+            let person = {
+                name: "Radit"
+            }
+
+            if (person.name === undefined) {
+                console.info("Undefined 2")
+            } else {
+                console.info(`Hello ${person.name}`)
+            }
+        </script>
+    </body>
+</html>

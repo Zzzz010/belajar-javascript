@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <title>Tipe Data Objek</title>
+    </head>
+    <body>
+        <script>
+            const kosong = {}
+            const pribadi = {}
+
+            pribadi["Nama"] = "Raditya Bagus Putra"
+            pribadi["Alamat"] = "Blitar, Jawa Timur"
+            pribadi["Umur"] = 11
+            pribadi["Hapus"] = "Testing Hapus"
+            console.table(pribadi)
+
+            delete pribadi["Hapus"]
+            console.table(pribadi)
+
+            const orang = {
+                nama: "Raul",
+                alamat: "Jawa Timur",
+                umur: 21
+            }
+            
+            console.table(orang)
+
+        </script>
+    </body>
+</html>

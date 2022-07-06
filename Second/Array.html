@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <title>Array</title>
+    </head>
+    <body>
+        <script>
+            let ArrayKosong = []
+
+            let ArrayNama = ["Raditya", "Bagus", "Putra"]
+
+            const Angka = []
+
+            Angka.push("24")
+            Angka.push("25, 29")
+            Angka.push("21", 26)
+            Angka.push("Dua Lima", "Dua Sembilan")
+            Angka.push("Dua Sembilan")
+            console.table(Angka)
+            
+            Angka[1] = "Dua Empat"
+            Angka[5] = "Dua Dua"
+            console.table(Angka)
+
+            console.info(Angka.length)
+            console.info(Angka[3])
+            console.info(Angka[6])
+
+            delete Angka[4]
+            console.table(Angka)
+
+            Angka.push(["1", "2", 3])
+            console.info(Angka)
+        </script>
+    </body>
+</html>
