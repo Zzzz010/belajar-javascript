@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <title>Label Loop</title>
+    </head>
+    <body>
+        <script>
+            loop_i:
+            for(let i = 0; i < 100; i++) {
+                loop_j:
+                for(let j = 0; j < 10; j++) {
+                    console.info(`${i} - ${j}`)
+                }
+            }
+
+            loop_k:
+                for(let k = 0; k < 10; k++) {
+                    loop_l:
+                        for(let l = 0; l < 20; l++) {
+                            if (l > 11) {
+                                continue loop_k
+                            }
+                            document.writeln(`<p>${k}-${l}</p>`)
+                        }
+                }
+        </script>
+    </body>
+</html>

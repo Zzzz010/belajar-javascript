@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <title>Type Of</title>
+    </head>
+    <body>
+        <script>
+            let data = null
+
+            if (typeof data === "undefined") {
+                console.info("Ini data undefined")
+            } else if (typeof data === "string") {
+                console.info("Ini data string")
+            } else if (typeof data === "boolean") {
+                console.info("Ini data boolean")
+            } else if (typeof data === "number") {
+                console.info("Ini data number")
+            } else if (typeof data === "null") {
+                console.info("Ini data null object")
+            } else if (typeof data === "object") {
+                console.info("Ini data object")
+            }
+
+            let data1 = "Raul"
+            const typedata = typeof data1
+            document.writeln(`<p>${typedata}</p>`)
+        </script>
+    </body>
+</html>
