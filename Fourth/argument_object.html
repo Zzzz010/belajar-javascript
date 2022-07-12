@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <title>Argument Object</title>
+    </head>
+    <body>
+        <script>
+            function OldSum() {
+                let total = 0
+                for (const barang of arguments) {
+                    total += barang
+                }
+                document.writeln(`<p> Totalnya adalah ${total}</p>`)
+            }
+
+            OldSum(1, 50, 30, 20, 70)
+        </script>
+    </body>
+</html>

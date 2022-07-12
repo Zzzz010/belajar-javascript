@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <title>Arrow Function</title>
+    </head>
+    <body>
+        <script>
+            const sayHello = (name) => {
+                const say = `Hello ${name}`
+                console.info(say)
+            }
+
+            sayHello("Raul")
+
+            const sayHello2 = (name) => console.info(`Hello ${name}`)
+            sayHello2("Unknows")
+
+            const sum = (first, second) => first + second
+            console.info(sum(10,20))
+
+            const names = name => console.info(`Hello ${name}`)
+            names("Radit")
+
+            function giveMeName(callback) {
+                callback("Excel")
+            }
+
+            giveMeName((name) => console.info(`Hello ${name}`)) 
+
+
+        </script>
+    </body>
+</html>

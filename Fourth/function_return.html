@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <title>Function Return</title>
+    </head>
+    <body>
+        <script>
+            // buat function dan menghasilkan return
+            function SayHelloSomeone(firstName, lastName) {
+                const Hello = `Hello ${firstName} ${lastName}`
+                return Hello
+            }
+            
+            // penangkap return
+            const hasil = SayHelloSomeone("Raul", "Zeroxan")
+            document.writeln(`<p>${hasil}</p>`)
+
+            function HasilUjianAkhir(value) {
+                if (value > 90) {
+                    return "A"
+                } else if (value > 80) {
+                    return "B"
+                } else if (value > 70) {
+                    return "C"
+                } else if (value > 60) {
+                    return "D"
+                } else if (value > 50) {
+                    return "E"
+                } else {
+                    return "F"
+                }
+            }
+
+            const NilaiUjian = HasilUjianAkhir(84)
+            document.writeln(`<p>${NilaiUjian}</p>`)
+
+            function element(array, searhvalue) {
+                for (const element of array) {
+                    if (element === searhvalue) {
+                        return true
+                    }
+                } 
+                return false
+            }
+
+            const array = [1,2,3,4,5,6,7]
+            const search = 9
+            const temu = element(array, search)
+            document.writeln(`<p>${temu}</p>`)
+        </script>
+    </body>
+</html>

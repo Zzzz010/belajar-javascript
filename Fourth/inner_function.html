@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <title>Inner Function</title>
+    </head>
+    <body>
+        <script>
+            function outer() {
+                function inner() {
+                    document.writeln(`<p> Inner Function </p>`);
+                }
+
+                // cetak hasil function inner
+                inner() 
+                inner()
+            }
+
+            outer() // manggil function outer
+            inner() // error karena function dalam tidak bisa dipanggil di luar funcion induknya
+            
+        </script>
+    </body>
+</html>

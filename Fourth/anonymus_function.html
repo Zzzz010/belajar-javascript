@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <title>Anonymus Function</title> 
+    </head>
+    <body>
+        <script>
+            let hay = function (name) {
+                console.info(name);
+            }
+
+            hay("Raul")
+
+            function call(callback) {
+                callback("Zero")
+            }
+
+            call(function (name) {
+                console.info(`Hello ${name}`);
+            })
+        </script>
+    </body>
+</html>

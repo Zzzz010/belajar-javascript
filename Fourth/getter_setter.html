@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <title>Getter Setter</title>
+    </head>
+    <body>
+        <script>
+             const person = {
+                firstname: 'John',
+                lastname: 'Foster',
+                get FullName() {
+                    return `${this.firstname} ${this.lastname}`
+                },
+                set FullName(value) {
+                    const array = value.split(' ')
+                    this.firstname = array[0]
+                    this.lastname = array[1]
+                }
+             }
+             
+             console.info(person.FullName)
+             person.firstname = "Raul"
+             console.info(person.FullName)
+
+             person.FullName = "Raditya Bagus"
+             console.info(person.firstname)
+             console.info(person.lastname)
+        </script>
+    </body>
+</html>

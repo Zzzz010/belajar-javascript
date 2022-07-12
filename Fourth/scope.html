@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <title>Scope</title>
+    </head>
+    <body>
+        <script>
+            // global scope
+            let counter = 0
+
+            function LetCounter() {
+                // local scope function counter
+                counter ++ // semua bisa akses
+                
+            }
+
+            LetCounter()
+            LetCounter()
+
+            console.info(counter)
+
+            function First() {
+                let FirstVariable = "First"
+                console.info(FirstVariable)
+            }
+
+            function Second() {
+                let SecondVariable = "Second"
+            }
+
+            First()
+            Second()
+
+            // tidak bisa akses karena bukan global access
+            // console.info(FirstVariable)
+            // console.info(SecondVariable)
+
+            // nested function
+            function nested() {
+                let Variable = "Zero"
+
+                function panggil() {
+                    document.writeln(Variable)
+                }
+
+                panggil()
+
+            }
+
+            nested()
+        </script>
+    </body>
+</html>
