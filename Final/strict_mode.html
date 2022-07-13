@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <title>Strict Mode</title>
+    </head>
+    <body>
+        <script>
+             function turnOnStrict() {
+                'use strict'
+                const person = {
+                    firstName: "John"
+                }
+
+                with (person) {
+                    console.info(firstName)
+                }
+             }
+
+             turnOnStrict()
+        </script>
+    </body>
+</html>

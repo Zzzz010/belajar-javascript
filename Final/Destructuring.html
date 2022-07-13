@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <title>Destructuring</title>
+    </head>
+    <body>
+        <script>
+            
+              // Array  
+              let name = ["Raung", "Jayan", "Kawi", "Unk", "Zero"]
+
+              let [firstname, middlename, lastname, ...other] = name
+
+              console.info(firstname)
+              console.info(middlename)
+              console.info(lastname)
+              console.info(other)
+
+              // Object
+              const person = {
+                firstname1: "Raditya",
+                lastname1: "Putra",
+                address: {
+                    street: "R.A Kartini No 20",
+                    city: "Blitar",
+                    country: "Indonesia"
+                },
+                hobby: "Sleep",
+                school: "SD Babadan 01"
+              }
+
+              // nested
+              let {firstname1, lastname1, address: {country, city, street}, ...other1} = person
+
+              console.info(firstname1)
+              console.info(lastname1)
+              console.info(city)
+              console.info(street)
+              console.info(country)
+              console.info(other1)
+
+              // parameter
+              function DisplayNames({firstname2, middlename2, lastname2, city, street, country}) {
+                console.info(firstname2)
+                console.info(middlename2)
+                console.info(lastname2)
+              }
+
+              const person2 = {
+                firstname2: "John",
+                middlename2: "Ex",
+                lastname2: "Foster"
+              }
+
+              DisplayNames(person2)
+
+              function sum([first, second]) {
+                return first + second
+              }
+
+              console.info(sum([10, 25]))
+              console.info(sum([34, 67]))
+
+              // default values
+              names1 = ["Unk", "Known"]
+
+              const [fname, lname, mname = "Owen"] = names1
+
+              console.info(fname)
+              console.info(mname)
+              console.info(lname)
+
+              const names2 = {
+                first_name: "Rossa",
+                second_name: "Rifta"
+              }
+
+              const {first_name, second_name, third_name = "Rose"} = names2
+
+              console.info(first_name)
+              console.info(second_name)
+              console.info(third_name)
+              
+              const {
+                first_name: NamaPertama, 
+                second_name: NamaKedua, 
+                third_name: NamaKetiga = "Reyna"
+              } = names2
+
+              console.info(NamaPertama)
+              console.info(NamaKedua)
+              console.info(NamaKetiga)
+        </script>
+    </body>
+</html>
